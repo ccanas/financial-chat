@@ -71,3 +71,5 @@ C:\Users\Cristian\source\repos\financial-chat\financial-chat\bin\Microsoft.Owin.
 C:\Users\Cristian\source\repos\financial-chat\financial-chat\obj\Debug\financial-chat.csprojResolveAssemblyReference.cache
 C:\Users\Cristian\source\repos\financial-chat\financial-chat\obj\Debug\financial-chat.dll
 C:\Users\Cristian\source\repos\financial-chat\financial-chat\obj\Debug\financial-chat.pdb
+C:\Users\Cristian\source\repos\financial-chat\financial-chat\bin\financial-chat.business.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat\bin\financial-chat.business.pdb

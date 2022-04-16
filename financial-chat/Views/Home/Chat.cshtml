@@ -32,6 +32,12 @@
                 $('#sendmessage').click(function () {
                     // Call the Send method on the hub.
                     chat.server.send("@User.Identity.Name", $('#message').val());
+                    if ($('#message').val().includes("/stock")) {
+                       // chat.server.sendAsync("@User.Identity.Name", $('#message').val());
+                        chat.server.sendAsync("@User.Identity.Name", $('#message').val()).done(function () {
+                            var a = 1;
+                        });
+                    }
                     // Clear text box and reset focus for next comment.
                     $('#message').val('').focus();
                 });
