@@ -34,8 +34,8 @@
                     chat.server.send("@User.Identity.Name", $('#message').val());
                     if ($('#message').val().includes("/stock")) {
                        // chat.server.sendAsync("@User.Identity.Name", $('#message').val());
-                        chat.server.sendAsync("@User.Identity.Name", $('#message').val()).done(function () {
-                            var a = 1;
+                        chat.server.sendAsync("@User.Identity.Name", $('#message').val()).done(function (response) {
+                            chat.server.send("@User.Identity.Name", response);
                         });
                     }
                     // Clear text box and reset focus for next comment.

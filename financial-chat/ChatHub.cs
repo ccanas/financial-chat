@@ -33,13 +33,11 @@ namespace SignalRChat
                     if (string.IsNullOrEmpty(stockCode))
                     {
                         message = "The stock code is missing";
-                        Clients.All.addNewMessageToPage(name, message);
                     }
                     else
                     {
                         var result = await _service.GetSymbol(stockCode);
-                        message = FormatResponse(stockCode, result);
-                        Clients.All.addNewMessageToPage(name, message);
+                        message = string.IsNullOrEmpty(result) ? stockCode + " is not a valid code" : FormatResponse(stockCode, result);
                     }
                 }
             }
@@ -48,7 +46,7 @@ namespace SignalRChat
 
         private string FormatResponse(string stockCode, string response)
         {
-            var stockResponse = stockCode + " quote is $";
+            var stockResponse = stockCode + " quote is ";
             string[] lines = response.Replace("\r", "").Split('\n');
             string[] keys = lines[0].Split(',');
             string[] values = lines[1].Split(',');
@@ -56,7 +54,10 @@ namespace SignalRChat
             {
                 if (keys[i] == "High")
                 {
-                    stockResponse += values[i] + " per share";
+                    if(values[i] == "N/D")
+                        stockResponse += " not a valid code";
+                    else
+                        stockResponse += "$" + values[i] + " per share";
                 }
             }
 
