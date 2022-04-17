@@ -1,0 +1,16 @@
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\financial-chat.tests.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\financial-chat.tests.pdb
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\obj\Debug\financial-chat.tests.csprojResolveAssemblyReference.cache
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\obj\Debug\financial-chat.tests.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\obj\Debug\financial-chat.tests.pdb
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\Castle.Core.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\financial-chat.business.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\Moq.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\financial-chat.business.pdb
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\Castle.Core.xml
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\Moq.xml
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.tests\bin\Debug\System.Threading.Tasks.Extensions.xml

@@ -23,9 +23,16 @@ namespace SignalRChat
                 if (item.Contains("/stock"))
                 {
                     var stockCode = item.Replace("/stock=", "");
-                    StockService service = new StockService();
-                    result = await service.GetSymbol(stockCode);
-                    Clients.All.addNewMessageToPage(name, result);
+                    if (string.IsNullOrEmpty(stockCode))
+                    {
+                        Clients.All.addNewMessageToPage(name, "The stock code is missing");
+                    }
+                    else
+                    {
+                        StockService service = new StockService();
+                        result = await service.GetSymbol(stockCode);
+                        Clients.All.addNewMessageToPage(name, result);
+                    }                    
                 }
             }
             return result;

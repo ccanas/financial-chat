@@ -18,16 +18,16 @@ namespace financial_chat.business.Services
 
         public async Task<string> GetSymbol(string stockCode)
         {
-            var requestPath = GetRequestPath(stockCode);
-            var url = baseUrl + requestPath;
-            var httpRequestMessage = GetHttpRequest(url);
-            HttpClient client = new HttpClient();
-            var response = await client.GetAsync(url);
+            var response = await RequestSymbol(stockCode);
             var result = "";
 
-            if (response.IsSuccessStatusCode)
+            if (!string.IsNullOrEmpty(response))
             {
-                result = FormatResponse(stockCode, response.Content.ReadAsStringAsync().Result);
+                result = FormatResponse(stockCode, response);
+            }
+            else
+            {
+                result = stockCode + " is not a valid code";
             }
             return result;
         }
@@ -53,6 +53,18 @@ namespace financial_chat.business.Services
             }
 
             return stockResponse;
+        }
+
+        public async Task<string> RequestSymbol(string stockCode)
+        {
+            var requestPath = GetRequestPath(stockCode);
+            var url = baseUrl + requestPath;
+            HttpClient client = new HttpClient();
+            var response = await client.GetAsync(url);
+
+            return response.IsSuccessStatusCode ? response.Content.ReadAsStringAsync().Result : "";
+            
+
         }
     }
 }
