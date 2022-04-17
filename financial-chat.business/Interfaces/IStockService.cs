@@ -7,6 +7,5 @@ namespace financial_chat.business.Interfaces
     public interface IStockService
     {
         Task<string> GetSymbol(string stockCode);
-        Task<string> RequestSymbol(string stockCode);
     }
 }
