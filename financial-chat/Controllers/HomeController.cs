@@ -1,4 +1,7 @@
-﻿using financial_chat.business.Services;
+﻿using financial_chat.business;
+using financial_chat.business.Services;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
@@ -15,7 +18,13 @@ namespace financial_chat.Controllers
         [Authorize]
         public ActionResult Chat()
         {
-            return View(); 
+            List<Chatroom> messages;
+            using (var context = new Entities())
+            {
+                messages = context.Chatrooms.Select(x => x).OrderByDescending(x => x.CreatedDate).Take(50).ToList();
+            }
+            
+            return View(messages); 
         }
     }
 }

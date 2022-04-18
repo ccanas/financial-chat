@@ -73,3 +73,5 @@ C:\Users\Cristian\source\repos\financial-chat\financial-chat\obj\Debug\financial
 C:\Users\Cristian\source\repos\financial-chat\financial-chat\obj\Debug\financial-chat.pdb
 C:\Users\Cristian\source\repos\financial-chat\financial-chat\bin\financial-chat.business.dll
 C:\Users\Cristian\source\repos\financial-chat\financial-chat\bin\financial-chat.business.pdb
+C:\Users\Cristian\source\repos\financial-chat\financial-chat\bin\aspnet-financial-chat-20220415041334.mdf
+C:\Users\Cristian\source\repos\financial-chat\financial-chat\bin\aspnet-financial-chat-20220415041334_log.ldf

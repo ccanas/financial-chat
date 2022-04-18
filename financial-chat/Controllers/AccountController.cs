@@ -108,8 +108,7 @@ namespace financial_chat.Controllers
         {
             if (ModelState.IsValid)
             {
-                var userName = model.Email.Split('@')[0];
-                var user = new ApplicationUser { UserName = userName, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

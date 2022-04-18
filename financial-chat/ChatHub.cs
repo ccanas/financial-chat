@@ -6,6 +6,7 @@ using financial_chat.business.Services;
 using System.Threading.Tasks;
 using System.Linq;
 using financial_chat.business.Interfaces;
+using financial_chat.business;
 
 namespace SignalRChat
 {
@@ -20,6 +21,7 @@ namespace SignalRChat
         public void Send(string name, string message)
         {
             Clients.All.addNewMessageToPage(name, message);
+            SaveMessage(name, message);
         }
 
         public async Task<string> SendAsync(string name, string message)
@@ -42,6 +44,21 @@ namespace SignalRChat
                 }
             }
             return message;
+        }
+
+        public void SaveMessage(string name, string msg)
+        {
+            using(var context = new Entities())
+            {
+                var message = new Chatroom
+                {
+                    MessageText = msg,
+                    UserName = name,
+                    CreatedDate = DateTime.Now
+                };
+                context.Chatrooms.Add(message);
+                context.SaveChanges();
+            }
         }
 
         private string FormatResponse(string stockCode, string response)

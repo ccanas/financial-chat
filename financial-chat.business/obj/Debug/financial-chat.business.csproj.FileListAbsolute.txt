@@ -4,3 +4,9 @@ C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\bin\Debug\
 C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\obj\Debug\financial-chat.business.csprojResolveAssemblyReference.cache
 C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\obj\Debug\financial-chat.business.dll
 C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\obj\Debug\financial-chat.business.pdb
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\bin\Debug\aspnet-financial-chat-20220415041334.mdf
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\bin\Debug\aspnet-financial-chat-20220415041334_log.ldf
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\bin\Debug\EntityFramework.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\bin\Debug\EntityFramework.xml
+C:\Users\Cristian\source\repos\financial-chat\financial-chat.business\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,7 +1,6 @@
 ﻿using financial_chat.business.Interfaces;
 using System;
 using System.Threading.Tasks;
-using financial_chat.business.Entities;
 using System.Configuration;
 using System.Net.Http;
 using System.Linq;
