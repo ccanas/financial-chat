@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Web;
 using Microsoft.AspNet.SignalR;
-using financial_chat.Controllers;
-using financial_chat.business.Services;
 using System.Threading.Tasks;
 using System.Linq;
 using financial_chat.business.Interfaces;

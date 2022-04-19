@@ -102,9 +102,7 @@
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="aspnet-financial-chat-20220415041334.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
